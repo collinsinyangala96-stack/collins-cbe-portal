@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0106)https://embed.fbsbx.com/playables/view/27292526763704616/?ext=1787309679&hash=Q92gDAHgNLZIJhiRxc_EmJ1gwmcw -->
+<!-- saved from url=(0105)https://embed.fbsbx.com/playables/view/3321530548023147/?ext=1787311552&hash=Q92gDAHm9qFimMEvMkDiupwWdx7D -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- Playables SDK -->
 <script>// Playables SDK v1.0.0
@@ -769,8 +769,8 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
   fill: black;
 }</style><style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-        .container { background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); width: 90%; max-width: 1200px; min-height: 600px; display: flex; overflow: hidden; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
+        .container { background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); width: 95%; max-width: 1400px; margin: 20px auto; min-height: 90vh; display: flex; overflow: hidden; }
         .login-section { flex: 1; padding: 60px; display: flex; flex-direction: column; justify-content: center; }
         .dashboard-section { display: none; flex: 1; padding: 40px; overflow-y: auto; }
         .logo { text-align: center; margin-bottom: 30px; }
@@ -779,28 +779,39 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
         h2 { color: #333; margin-bottom: 30px; text-align: center; }
         .input-group { margin-bottom: 20px; }
         label { display: block; margin-bottom: 8px; color: #555; font-weight: 500; }
-        input { width: 100%; padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 15px; transition: all 0.3s; }
-        input:focus { outline: none; border-color: #667eea; }
-        .btn { width: 100%; padding: 14px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; transition: transform 0.2s; }
+        input, select, textarea { width: 100%; padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 15px; transition: all 0.3s; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: #667eea; }
+        .btn { width: 100%; padding: 14px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; transition: transform 0.2s; margin-top: 10px; }
         .btn:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4); }
+        .btn-small { padding: 8px 15px; font-size: 14px; width: auto; margin: 5px; }
+        .btn-secondary { background: #6c757d; }
+        .btn-danger { background: #e74c3c; }
         .error { color: #e74c3c; font-size: 14px; margin-top: 10px; text-align: center; display: none; }
         .sample-accounts { margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px; }
         .sample-accounts h3 { font-size: 14px; color: #666; margin-bottom: 10px; }
         .account { display: flex; justify-content: space-between; padding: 8px 0; font-size: 13px; }
-        .account span { color: #333; }
-        .account strong { color: #667eea; }
         .dashboard-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 2px solid #f0f0f0; }
         .dashboard-header h2 { margin: 0; text-align: left; }
         .user-info { display: flex; align-items: center; gap: 15px; }
         .user-badge { background: #667eea; color: white; padding: 8px 15px; border-radius: 20px; font-size: 14px; }
         .logout-btn { background: #e74c3c; padding: 8px 20px; border-radius: 8px; color: white; border: none; cursor: pointer; font-size: 14px; }
-        .modules { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .modules { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
         .module-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; color: white; cursor: pointer; transition: transform 0.3s; }
         .module-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3); }
         .module-card h3 { font-size: 18px; margin-bottom: 10px; }
         .module-card p { font-size: 14px; opacity: 0.9; }
+        .module-content { display: none; background: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 20px; }
+        .module-content.active { display: block; }
+        .module-content h3 { color: #667eea; margin-bottom: 20px; }
+        .back-btn { background: #6c757d; margin-bottom: 20px; }
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; border-radius: 8px; overflow: hidden; }
+        .data-table th, .data-table td { padding: 12px; text-align: left; border-bottom: 1px solid #e0e0e0; }
+        .data-table th { background: #667eea; color: white; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px; }
         .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4); z-index: 1000; }
         .hidden { display: none !important; }
+        .success-msg { background: #d4edda; color: #155724; padding: 12px; border-radius: 8px; margin: 10px 0; display: none; }
+        .file-item { background: white; padding: 15px; border-radius: 8px; margin: 10px 0; display: flex; justify-content: space-between; align-items: center; }
     </style>
 <style type="text/css">:root [href="https://adstub.net/cina777/"], :root [href="https://adstub.net/arab777/"], :root [href="https://adstub.net/judi89/"], :root [href^="//mage98rquewz.com/"], :root [href^="//x4pollyxxpush.com/"], :root div.content-showcase-itru-sufficient-2d:not(.q7d5z1l):not(.x9a7b3k), :root div[class*="publift-widget-"]:has(.fuse-slot-sticky), :root body > div[data-captcha-enable="true"] > div.cleanslate[id^="google-captcha-"] > div.captcha-box, :root html[data-scrapbook-source][data-scrapbook-create][data-scrapbook-title] > body.no-js > div.main-wrapper[role="main"] > div.main-content, :root html > body.body > div.container > div.content > form > table.optoutForm, :root html > body > div.container > form#unsubscribe-form[onsubmit="submitUnsubscribeForm(event)"], :root html > body > div.container.m-p > #checkbox-window.checkbox-window, :root html[lang] > body:not([class]):not([id]):not([style]) > div.background-container > div.container > div.captcha-box, :root html[lang] > body.ishome > div.adult + main.main, :root #wrapper ~ a[target="_blank"][href="#"][style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;display: block;z-index: 9999999;cursor: auto"], :root .header ~ div[style^="position:fixed;inset:0;z-index:2147483647;background:black;opacity:0.01;height:"], :root img[width="728"][height="90"], :root button.btn[data-openuri*="/4/"], :root #adbtm[onclick="badr();"], :root #teaser3[style^="width: 100%;height:0;text-align: center;display: scroll;position:fixed;"], :root a[href^="https://www.polybuzz.ai/"] img.responsive-image, :root .kln > a[href^="https://www.polybuzz.ai/"], :root html[lang][style^="--main-bg-color"] > body:not([class]):not([id]) > div#container[style="visibility: visible;"] > div#banner[style="opacity:0"] ~ main:not([class]):not([id]) > div#message, :root #donate > a[href][style][onclick="thank_you()"][target="_blank"][rel="nofollow"], :root .fp-player > div[style="position: absolute; inset: 0px; overflow: hidden; z-index: 160; background: transparent; display: block;"], :root .jwplayer ~ div[style="position:absolute;top:0;left:0;width: 100%;height: 100%;z-index:2147483647"], :root iframe.lazyloaded[data-src^="https://rcm-fe.amazon-adsystem.com/"], :root div[style^="position: fixed; inset: 0px; z-index: 2147483647; background: black; opacity: 0.01"], :root div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"], :root .skel-layers-fixed a[href*=".com/smartpop/"], :root [style^="position: fixed; inset: 0px; z-index: 2147483647; background-color: transparent; pointer-events: auto; cursor: auto; margin: 0px; padding: 0px; display: block;"], :root .ads-iframe:not([style="position: absolute; left: -10px; top: -10px;"]), :root div[style="position: fixed; display: block; width: 100%; height: 100%; inset: 0px; background-color: rgba(0, 0, 0, 0); z-index: 300000;"], :root [data-ad-width]:not([style$="left: -10000px !important; top: -1000px !important;"]):not(.adsbygoogle), :root #adspace:not([style^="position: absolute; left: -5000px"]), :root [href="https://adstub.net/ratu89/"], :root #ads-footer:not([style^="position: absolute; left: -5000px"]), :root a.tdn[href^="https://landing.brazzersnetwork.com/"], :root #ads-1:not([style^="position: absolute; left: -5000px"]), :root #adframe:not(frameset):not([style^="position: absolute; left: -5000px"]), :root #ad_slot:not([style^="position: absolute; left: -5000px"]), :root #ad_big:not([style^="position: absolute; left: -5000px"]), :root #ad_area:not([style^="position: absolute; left: -5000px"]), :root #ad_300:not([style^="position: absolute; left: -5000px"]), :root a[dontfo=""][style$="position: absolute; z-index: 2147483647;"], :root [href^="https://join.enjoyx.com/track/"], :root a[href*=".click/?z="][href*="&n"], :root [href^="//taghaugh.com/"], :root div[class$="player-promo-col"], :root [href^="https://www.safestcontentgate.com/"], :root [href^="//cadsecs.com/"], :root [href^="//mellowads.com/"], :root [href^="https://fireads.online/"], :root html[lang="tr"] #aa-wp .container-ads-adjustment, :root .bb ~ main#container .containerAds, :root .close-btn4[onclick="closeAd4()"], :root .close-btn3[onclick="closeAd3()"], :root .close-btn[onclick="closeAd()"], :root #go-to-top + div[id][class], :root div.card > div#cbRow.checkbox-row[onclick="startVerify()"], :root #tongkatlol ~ script[src^="/shrinke/js/"] ~ .main-content-box > div[style="width:100%;height:110px"], :root body > div[style$="z-index: 2147483647; top: 0px; left: 0px; position: fixed; display: block;"], :root #kt_player .fp-brand, :root a[id][href="https://toolkitspro.com"][rel^="noopener noreferrer"], :root #kt_player #ads_iframe, :root .header-container a[href^="https://candyai.gg/"], :root [src^="//dombnrs.com/"], :root html[lang="tr"] > body.has-footer-ad.has-pageskin-desktop a.pageskin-mobile-wrapper, :root a[href*="/go.php?a_aid="], :root [href^="https://klsdee.com/"], :root [href^="//producebreed.com/"], :root [href="//xxxrevpushclcdu.com/app.webp"], :root [href^="https://pl.allsports4u.club/"], :root [href^="https://pl.allsports4free.club/"], :root [href^="https://adult.xyz/"], :root [href^="https://popcash.net/"], :root a[href^="http://www.poweredbyliquidfire.mobi/"], :root [href^="https://t.mobtyb.com/"], :root [data-lnguri*="vipbox"], :root a[href^="https://syndication.exdynsrv.com/splash.php"], :root [href*="/afu.php"], :root span[id^="ezoic-pub-ad-placeholder-"], :root ins.adsbygoogle[data-ad-slot], :root ins.adsbygoogle[data-ad-client], :root img[src^="https://s-img.adskeeper.com/"], :root guj-ad, :root gpt-ad, :root div#spot-holder.spot-holder[style="display: block;"], :root div[ow-ad-unit-wrapper], :root div[id^="zergnet-widget"], :root html[lang] > body:not([class]):not([id]):not([style]) > div.container > div.recaptcha-box, :root div[id^="vuukle-ad-"], :root div[id^="taboola-stream-"], :root div[id^="sticky_ad_"], :root div[id^="st"][style^="z-index: 999999999;"], :root div[id^="rc-widget-"], :root html > body > div.content > dl > dd.dd1 > div.min_sider > form#form1[action="unsubscribe.php"], :root div[id^="mrec-leaderboard-"], :root div[id^="gpt_ad_"], :root div[id^="ezoic-pub-ad-"], :root div[id^="dfp-ad-"], :root div[id^="crt-"][style], :root #ad_728:not([style^="position: absolute; left: -5000px"]), :root div[id^="apn_native_ad_slot_"], :root div[id^="adspot-"], :root div[id^="adrotate_widgets-"], :root a[onclick="openAuc();"], :root ps-connatix-module, :root div[id^="ad_position_"], :root [data-ad-module]:not([style$="left: -10000px !important; top: -1000px !important;"]):not(.adsbygoogle), :root a[id][href="https://chpadblock.com/"][rel^="noopener noreferrer"], :root div[id^="ad-div-"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root [href="https://adstub.net/rusia777/"], :root #banner468:not([style^="position: absolute; left: -5000px"]), :root div[data-id-advertdfpconf], :root div[data-dfp-id], :root div[style="top: 0px; left: 0px; width: 1287px; height: 500px; position: fixed; z-index: 2147483647;"], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-alias="300x250 Ad 2"], :root div[data-adzone], :root div[data-adunit-path], :root div[data-adname], :root div[data-ad-placeholder], :root a[href^="https://osfultrbriolenai.info/"], :root div[class^="Adstyled__AdWrapper-"], :root a[href^="https://go.xlviiirdr.com"], :root div[class$="-adlabel"], :root display-ads, :root a[href^="https://go.grinsbest.com/"], :root citrus-ad-wrapper, :root a[href^="https://s.zlinkd.com/"], :root bottomadblock, :root html[lang] > body#body > * > div.cvh.BlockClicksActivityBusy, :root amp-fx-flying-carpet, :root amp-embed[type="taboola"], :root html[lang="tr"] #aa-wp .rnd-ads-adjustment, :root amp-connatix-player, :root div[id^="google_dfp_"], :root ad-slot, :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="https://www.onlineusershielder.com/"], :root html[lang="tr"] > body.has-footer-ad.has-pageskin-desktop a.pageskin-click-right, :root a[href^="https://financeads.net/tc.php?"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://ak.psaltauw.net/"], :root broadstreet-zone-container, :root a[href^="https://www.highperformancecpmgate.com/"], :root amp-ad, :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="https://lnkxt.bannerator.com/"], :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root [href^="https://groorsoa.net/"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="https://www.effectiveratecpm.com/"], :root [href^="https://www.herbanomic.com/"] > img, :root a[href^="https://www.dql2clk.com/"], :root a[href^="https://explore-site.com/"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root [data-template-type="nativead"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.dating-finder.com/signup/?ai_d="], :root a[href^="https://wolf-327b.com/"], :root [data-ad-manager-id]:not([style$="left: -10000px !important; top: -1000px !important;"]):not(.adsbygoogle), :root a[href^="https://voluum.prom-xcams.com/"], :root a[href^="https://twinrdsyte.com/"], :root div[data-type="_mgwidget"]:not(.eyeo), :root a[href^="https://twinrdsrv.com/"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.afcpatrk.com/"], :root [href="https://t.me/Russia_Vs_Ukraine_War3"], :root a[href^="https://track.adform.net/"], :root a[href^="https://torguard.net/aff.php"] > img, :root .menu-item a[href^="https://go.rmhfrtnd.com"], :root [data-identity="adhesive-ad"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://tatrck.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://click.candyoffers.com/"], :root a[href^="https://t.aslnk.link/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"], :root a[href^="https://t.ajump1.com/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://go.trackitalltheway.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root div[data-alias="300x250 Ad 1"], :root a[href^="https://syndicate.contentsserved.com/"], :root a[href^="https://svb-analytics.trackerrr.com/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"] + .ob_source, :root a[href^="http://www.iyalc.com/"], :root a[href^="https://claring-loccelkin.com/"], :root a[href^="https://stardomcoit.com/"], :root a[href^="https://track.aftrk5.com/"], :root a[href^="https://slkmis.com/"], :root a[href^="https://myclick-2.com/"], :root a[href^="https://sexynearme.com/"], :root a[href^="https://s.zlinkt.com/"], :root [data-ad-manager-id], :root a[href^="https://s.zlinkr.com/"], :root [href="https://adstub.net/gaza88/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://s.zlink7.com/"], :root a[href^="https://s.ma3ion.com/"], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://s.gentlefieldpattern.com/"], :root a[href^="https://s.eunow4u.com/"], :root a[href^="https://random-affiliate.atimaze.com/"], :root #kt_player > div[style$="display: block;"][style*="inset: 0px;"], :root [href$="/sexdating.php"], :root a[href^="https://quotationfirearmrevision.com/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://www.dating-finder.com/?ai_d="], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root [href^="https://ap.octopuspop.com/click/"] > img, :root app-ad, :root a[href^="https://postback1win.com/"], :root html[lang] > body#body > * > div.cv-xwrapper > div.cvc > div.cv-inner, :root a[href^="https://a.adtng.com/"], :root a[href^="https://playnano.online/offerwalls/?ref="], :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root a[href^="https://pb-track.com/"], :root a[href^="https://pb-front.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://streamate.com/landing/click/"], :root a[href^="https://upsups.click/"], :root .ad-placeholder:not(#detect, #detect_ad_empire, #filter_ads_by_classname, .adsbox), :root a[href^="https://ndt5.net/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root a.poly-title[href^="https://www.polybuzz.ai/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root [data-ad-name], :root a[href^="https://loboclick.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://juicyads.in/"], :root [href^="https://go.rdrjmp.com/"], :root a[href^="https://snowdayonline.xyz/"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://join.bannedsextapes.com/track/"], :root [href^="https://exi8ef83z9.com/"], :root a[href^="https://jaxofuna.com/"], :root a[href^="https://italarizege.xyz/"], :root a[href^="https://s.happyleafmotion.com/"], :root a[href^="https://identicaldrench.com/"], :root body > div.captcha-container > div.captcha-card, :root ad-shield-ads, :root a[href^="https://hot-growngames.life/"], :root a[href^="https://helmethomicidal.com/"], :root #ad_space:not([style^="position: absolute; left: -5000px"]), :root display-ad-component, :root #adsquare:not([style^="position: absolute; left: -5000px"]), :root a[href^="https://golinks.work/"], :root a[href^="https://s.zlinkn.com/"], :root a[href^="https://go.xxxvjmp.com/"], :root a[href^="https://go.xxxjmp.com"], :root [class^="div-gpt-ad"]:not([style^="width: 1px; height: 1px; position: absolute; left: -10000px; top: -"]), :root a[href^="https://zirdough.net/"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root a[href^="https://go.xxxiijmp.com"], :root a[href^="https://go.xtbaffiliates.com/"], :root [data-role="tile-ads-module"], :root a[href^="https://go.xlviirdr.com"], :root a[href^="https://go.xlivrdr.com"], :root a[href^="https://ismlks.com/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://go.xlirdr.com"], :root [data-css-class="dfp-inarticle"], :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root [data-lnguri^="https://s3.amazonaws.com"], :root a[href^="https://lijavaxa.com/"], :root a[href^="https://go.goaserv.com/"], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://go.dmzjmp.com"], :root a[href^="https://www.bang.com/?aff="], :root #mgb-container > #mgb, :root a[href^="https://go.admjmp.com"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a[href^="https://datewhisper.life/"], :root a[href^="https://click.linksynergy.com/fs-bin/"] > img, :root a[href^="https://get-link.xyz/"], :root a[href^="https://www.mrskin.com/account/"], :root a[id][href="https://hamrocsit.com"][rel^="noopener noreferrer"], :root a[href^="https://www.adskeeper.com"], :root #vidcloud-player > #overlay-container, :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://clicks.affstrack.com/"] > img, :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://dl-protect.net/"], :root a[href*=".foxqck.com/"], :root a[href^="https://ctosrd.com/"], :root div[id*="ScriptRoot"]:not(.eyeo), :root a[href^="https://clixtrac.com/"], :root a[href^="https://go.bushheel.com/"], :root a[href^="https://ctjdwm.com/"], :root div[data-ad-wrapper], :root .gnt_em_vp_c[data-g-s="vp_dk"], :root [href="//sexcams.plus/"], :root a[href^="https://camfapr.com/landing/click/"], :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href*="&maxads="], :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="https://1betandgonow.com/"], :root a[href^="https://chaturbate.com/in/?"], :root a[href^="https://t.ajrkm1.com/"], :root a[href^="https://bongacams10.com/track?"], :root a[href*=".g2afse.com/"], :root a[href^="https://bodelen.com/"], :root a[href^="//hoodingluster.com/"], :root a[href^="https://black77854.com/"], :root #ad_footer:not([style^="position: absolute; left: -5000px"]), :root a[href^="https://getmatchedlocally.com/"], :root app-advertisement, :root a[href^="https://rixofa.com/"], :root a[href^="https://best-experience-cool.com/"], :root [data-taboola-options], :root a[href^="https://believessway.com/"], :root a[href^="https://Click.ggpickaff.com/"], :root a[href^="https://banners.livepartners.com/"], :root #app-root ~ a[target="_blank"][href="#"][style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;display: block;z-index: 9999999;cursor: auto"], :root a[href^="http://revolvemockerycopper.com/"], :root a[href^="https://awptjmp.com/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://track.cam4tracking.com/"], :root a[href^="https://aweptjmp.com/"], :root a[href^="https://ausoafab.net/"], :root a[href^="https://clicks.pipaffiliates.com/"], :root #tabVideo > .rmedia, :root a[href^="https://aj1070.online/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="https://adultfriendfinder.com/go/"], :root a[href^="https://ads.planetwin365affiliate.com/"], :root a[href^="https://ads.leovegas.com/"], :root a[href^="https://go.awdeliverynet.com/"], :root a[href^="https://go.xlvirdr.com"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://a.medfoodhome.com/"], :root a[href^="https://cam4com.go2cloud.org/"], :root .nya-slot[style], :root a[href^="https://a.bestcontentweb.top/"], :root atf-ad-slot, :root a[href^="https://a2.adform.net/"], :root a[href^="https://a.candyai.love/"], :root .banner-img > .pbl, :root [data-m-ad-id], :root a[href^="https://a-ads.com/"], :root a[href^="https://1winpb.com/"], :root div[id^="optidigital-adslot"], :root [href^="https://wsup.ai/"], :root a[href^="https://123-stream.org/"], :root a[href^="https://in.rabbtrk.com/"], :root a[href^="http://www.h4trck.com/"], :root [href^="https://a.acebet.com/api/click?"], :root #video_player ~ div[id] div[style^="position:fixed;inset:0px;z-index:"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="http://partners.etoro.com/"], :root [href="https://chaturbate.jjgirls.com/"] > img, :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root amp-ad-custom, :root [href^="http://referrer.website/"], :root a[href^="http://trk.globwo.online/"], :root a[onclick^="window.location.replace('https://random-affiliate.atimaze.com/"], :root a[href^="https://bongacams2.com/track?"], :root a-ad, :root a[href^="https://offhandpump.com/"], :root a[href^="http://stickingrepute.com/"], :root #slashboxes > .deals-rail, :root div[aria-label="Ads"], :root [href^="http://mypillow.com/"] > img, :root a[href^="http://bongacams.com/track?"], :root .fp-ui > a[href][target="_blank"][style^="position: absolute; inset: 0px;"], :root a[href^="//startgaming.net/tienda/" i], :root a[href^="https://a.medfoodsafety.com/"], :root a[href^="//go.eabids.com/"], :root a[href^=" https://www.friendlyduck.com/AF_"], :root [data-cl-spot-id], :root a[href*="/jump/next.php?r="], :root a[href^="https://go.nordvpn.net/aff"] > img, :root #tongkatlol ~ script[src^="/shrinke/js/"] ~ .main-content-box + .content-box > div[id][style^="position: fixed; display: block; width: 100%;"], :root .\[\&_\.gdprAdTransparencyCogWheelButton\]\:\!pjra-z-\[5\], :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root #banner728x90:not([style^="position: absolute; left: -5000px"]), :root div[id^="lazyad-"], :root a[href^="http://com-1.pro/"], :root [href^="https://www.profitablegatecpm.com/"], :root a[href*=".cfm?domain="][href*="&fp="], :root a[href^="https://ab.advertiserurl.com/aff/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root [id^="section-ad-banner"], :root [id^="ad_slider"], :root html#html[sti][vic][lang] > body#allbody, :root [href^="https://www.onclickperformance.com/"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://wmctjd.com/"], :root a[href*="//jjgirls.com/sex/Chaturbate"], :root [id^="ad-wrap-"], :root [href^="https://zone.gotrackier.com/"], :root a[href^="http://sarcasmadvisor.com/"], :root [href^="https://www.restoro.com/"], :root a[href^="https://track.totalav.com/"], :root a[href^="https://ctrdwm.com/"], :root [href^="https://www.targetingpartner.com/"], :root .close-btn2[onclick="closeAd2()"], :root a[href^="https://join.virtuallust3d.com/"], :root .section-subheader > .section-hotel-prices-header, :root [href^="https://www.hostg.xyz/"] > img, :root [href*="passtechusa.com"], :root a[href^="https://bngpt.com/"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="http://adultfriendfinder.com/go/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root a[href^="https://tour.mrskin.com/"], :root a[href^="https://s.zlink3.com/"], :root a[href^="http://sneakyadministration.com/"], :root [href^="https://www.brighteonstore.com/products/"] img, :root div[id^="ad-position-"], :root a[href^="https://www.toprevenuegate.com/"], :root a[href^="https://bc.game/"], :root a[href^="http://join.brokestraightboys.com/track/"], :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root [href^="https://join.girlsoutwest.com/"], :root a[href^="https://activate-game.com/"], :root #player div[style$="cursor: pointer; position: absolute; width: 100%; height: 100%; padding: 1rem; z-index: 2147483647;"], :root div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"], :root .scroll-fixable.rail-right > .deals-rail, :root [data-wpas-zoneid], :root a[href^="https://track.aftrk3.com/"], :root [href^="https://join3.bannedsextapes.com"], :root html[lang] > body:not([style]) > div.captchaBody, :root #adheader:not([style^="position: absolute; left: -5000px"]), :root div[id^="adngin-"], :root [data-rc-widget], :root html[lang] > body.startnew > div#sections > section#section_uname, :root span[data-ez-ph-id], :root [href^="https://track.aftrk1.com/"], :root [href^="https://join.playboyplus.com/track/"], :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root a[href^="https://trk.softonixs.xyz/"], :root [href^="//look.utndln.com/offer"], :root div[data-adunit], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root a[href^="https://iqbroker.com/"][href*="?aff="], :root [href^="https://rpwmct.com/"], :root [href^="https://wct.link/click?"], :root a[href^="https://t.acam.link/"], :root a[href^="https://go.strpjmp.com/"], :root [href^="https://url.totaladblock.com/"], :root a[href^="https://go.rmishe.com/"], :root [href^="https://ilovemyfreedoms.com/landing-"], :root [href="https://adstub.net/indo666/"], :root [href^="https://glersakr.com/"], :root a[href^="https://tm-offers.gamingadult.com/"], :root [href^="https://charmingdatings.life/"], :root [data-id^="div-gpt-ad"], :root a[href^="https://tracker.loropartners.com/"], :root [href^="https://awbbjmp.com/"], :root a[href^="https://www.friendlyduck.com/AF_"], :root html[lang="tr"] #aa-wp + .fixed-footer .footer-ad-container, :root [href^="https://ad1.adfarm1.adition.com/"], :root a[href^="https://t.ajrkm3.com/"], :root in-page-message[doskip], :root [href^="https://aads.com/campaigns/"], :root a[href^="https://fc.lc/ref/"], :root a[href^="https://go.bbrdbr.com"], :root a[href^="http://tc.tradetracker.net/"] > img, :root a[href^="https://bngprm.com/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root [href^="http://www.mypillow.com/"] > img, :root .ob_container .item-container-obpd, :root [id^="div-gpt-ad"], :root [href^="https://wap4dollar.com/ad/nonadult/serve.php"], :root [href="https://jdrucker.com/gold"] > img, :root a[href^="https://join.virtualtaboo.com/track/"], :root [id^="ad_sky"], :root [name^="google_ads_iframe"], :root aside[id^="adrotate_widgets-"], :root [href="https://clickaine.com"], :root #playerOverlay[style="position:absolute; z-index:3"], :root a[href^="https://www.liquidfire.mobi/"], :root DFP-AD, :root .grid > .container > #aside-promotion, :root html[lang="tr"] > body.has-footer-ad.has-pageskin-desktop a.pageskin-desktop-wrapper, :root [data-type="ad-vertical"], :root [href^="https://go.xlrdr.com"], :root [href*="uselnk.com/"], :root a[href^="https://s.cant3am.com/"], :root .nav-item[href^="https://candyai.gg/"], :root [data-testid^="taboola-"], :root [data-testid^="section-AdRowBillboard"], :root a[href^="https://track.1234sd123.com/"], :root zeus-ad, :root [data-testid="prism-ad-wrapper"], :root [href^="https://ad.admitad.com/"], :root [href^="https://mypillow.com/"] > img, :root [data-testid="ad_testID"], :root a[href^="https://stellarcashflow.net/trck/"], :root [data-mobile-ad-id], :root [data-dynamic-ads], :root [href^="https://go.smljmp.com/"], :root a[href^="https://gamingadlt.com/?offer="], :root [data-desktop-ad-id], :root [href^="https://track.wg-aff.com/click"], :root a[href^="https://go.rmhfrtnd.com"], :root a[href^="https://pb-imc.com/"], :root a[href^="https://www8.smartadserver.com/"], :root topadblock, :root a[href^="//s.zlinkd.com/"], :root [data-uri^="https://s3.amazonaws.com"], :root [href^="https://mypatriotsupply.com/"] > img, :root [data-testid="adBanner-wrapper"], :root [href^="https://mylead.global/stl/"] > img, :root a[href*=".adsrv.eacdn.com/"], :root [href^="https://antiagingbed.com/discount/"] > img, :root #modal[doskip][prclck], :root #teaser1[style^="width:autopx;"], :root [href^="https://www.cloudways.com/en/?id"], :root [data-asg-ins], :root [data-block-type="ad"], :root [data-ad-width], :root a[href^="https://clickins.slixa.com/"], :root [onclick*="content.ad/"], :root a[href^="https://go.cmtaffiliates.com/"], :root [href^="https://optimizedelite.com/"] > img, :root div[data-ad-region], :root html > body.hold-transition.theme-primary.bg-img[style^="background-image"][style*="wallpaperaccess.com"][style*="background-repeat"][style*="background-size"], :root AMP-AD, :root [data-ad-cls], :root a[href^="https://www.adxsrve.com/"], :root a[href^="https://click.Ggpickaff.com/"], :root [data-ez-name], :root a[href^="https://go.mnaspm.com/"], :root a[href^="https://service.bv-aff-trx.com/"], :root #st-ami + div[id][class*=" "], :root a[href^="https://6-partner.com/"], :root [class^="s2nPlayer"], :root a[href^="https://traffdaq.com/"], :root [data-testid="commercial-label-taboola"], :root [class^="div-gpt-ad"], :root div[style^="z-index: 999999; background-image: url(\"data:image/gif;base64,"][style$="position: absolute;"], :root [href^="https://affiliate.fastcomet.com/"] > img, :root [class^="adDisplay-module"], :root a[href^="https://adclick.g.doubleclick.net/"], :root [data-freestar-ad][id], :root #ads-banner:not([style^="position: absolute; left: -5000px"]), :root AD-SLOT, :root a[href^="https://combodef.com/"], :root a[href^="https://click.hoolig.app/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"] > img, :root [data-ad-module], :root body > .security-container[style="opacity: 1; transform: translateY(0px);"], :root a[href^="https://a.bestcontentfood.top/"], :root #kt_player > a[target="_blank"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root figure.movie-detail-banner div[style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 999; cursor: pointer;"], :root #teaser2[style^="width:autopx;"], :root html[lang="tr"] > body.has-footer-ad.has-pageskin-desktop a.pageskin-click-left, :root [data-revive-zoneid], :root a[href^="https://losingoldfry.com/"], :root div[id^="div-gpt-"], :root a[href^="https://gml-grp.com/"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root div[data-ad-targeting], :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], :root [href^="https://www.avantlink.com/click.php"] img, :root #teaser3[style^="width:autopx;"], :root a[href^="https://go.hpyjmp.com"], :root iframe[scrolling="no"][sandbox*="allow-popups allow-modals"][style^="width: 100%; height: 100%; border: none;"], :root [href^="https://mystore.com/"] > img, :root [class^="amp-ad-"], :root a[href^="https://wittered-mainging.com/"], :root #ad_box:not([style^="position: absolute; left: -5000px"]), :root div[id][style^="position: fixed; inset: 0px; z-index: 2147483647; background: black"][style*="opacity: 0.01"], :root #teaser3[style="width: 100%;text-align: center;display: scroll;position:fixed;bottom: 0;margin: 0 auto;z-index: 103;"] { display: none !important; }</style></head>
 <body>
@@ -820,22 +831,13 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
                 <input type="password" id="password" placeholder="e.g. 1312 or ADM001 or T001" data-has-listeners="true">
             </div>
             <button class="btn" onclick="login()">Sign In to Portal</button>
-            <div class="error" id="errorMsg">Invalid username or password. Try Collins/1312, Teacher/T001 or Grace/ADM001</div>
+            <div class="error" id="errorMsg">Invalid username or password</div>
             
             <div class="sample-accounts">
                 <h3>Sample Accounts:</h3>
-                <div class="account">
-                    <span>Admin:</span>
-                    <strong>Collins / 1312</strong>
-                </div>
-                <div class="account">
-                    <span>Teacher:</span>
-                    <strong>Teacher / T001</strong>
-                </div>
-                <div class="account">
-                    <span>Learner:</span>
-                    <strong>Grace / ADM001</strong>
-                </div>
+                <div class="account"><span>Admin:</span><strong>Collins / 1312</strong></div>
+                <div class="account"><span>Teacher:</span><strong>Teacher / T001</strong></div>
+                <div class="account"><span>Learner:</span><strong>Grace / ADM001</strong></div>
             </div>
         </div>
 
@@ -851,63 +853,233 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
                 </div>
             </div>
             
-            <div class="modules" id="teacherModules">
-                <div class="module-card">
+            <div id="modulesGrid" class="modules">
+                <div class="module-card" onclick="openModule(&#39;attendance&#39;)">
                     <h3>📋 Attendance Register</h3>
                     <p>Mark daily attendance for all learners</p>
                 </div>
-                <div class="module-card">
+                <div class="module-card" onclick="openModule(&#39;filestorage&#39;)">
                     <h3>📁 File Storage</h3>
                     <p>Upload and manage lesson notes, worksheets</p>
                 </div>
-                <div class="module-card">
+                <div class="module-card" onclick="openModule(&#39;quiz&#39;)">
                     <h3>📝 Quiz Builder</h3>
                     <p>Create CBC-aligned quizzes and assessments</p>
                 </div>
-                <div class="module-card">
+                <div class="module-card" onclick="openModule(&#39;notes&#39;)">
                     <h3>📚 Notes Vault</h3>
                     <p>Access and organize teaching notes</p>
                 </div>
-                <div class="module-card">
+                <div class="module-card" onclick="openModule(&#39;pastpapers&#39;)">
                     <h3>📄 Past Papers</h3>
                     <p>KCPE &amp; CBC past papers repository</p>
                 </div>
-                <div class="module-card">
+                <div class="module-card" onclick="openModule(&#39;tracker&#39;)">
                     <h3>📊 CBC Tracker</h3>
                     <p>Track learner competencies and progress</p>
                 </div>
             </div>
 
-            <div class="modules hidden" id="learnerModules">
-                <div class="module-card">
-                    <h3>📖 My Assignments</h3>
-                    <p>View and submit your homework</p>
+            <!-- ATTENDANCE MODULE -->
+            <div id="attendance" class="module-content">
+                <button class="btn btn-secondary back-btn" onclick="closeModule()">← Back to Dashboard</button>
+                <h3>📋 Attendance Register</h3>
+                <div class="success-msg" id="attendanceMsg">Attendance saved successfully!</div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Date</label>
+                        <input type="date" id="attendanceDate" value="" data-has-listeners="true">
+                    </div>
+                    <div class="input-group">
+                        <label>Class/Grade</label>
+                        <select id="attendanceClass">
+                            <option>Grade 4</option>
+                            <option>Grade 5</option>
+                            <option>Grade 6</option>
+                            <option>Grade 7</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="module-card">
-                    <h3>📊 My Results</h3>
-                    <p>Check your grades and performance</p>
-                </div>
-                <div class="module-card">
-                    <h3>📚 Study Notes</h3>
-                    <p>Access lesson notes from teachers</p>
-                </div>
-                <div class="module-card">
-                    <h3>📝 Practice Quizzes</h3>
-                    <p>Take practice tests to improve</p>
-                </div>
+                <table class="data-table" id="attendanceTable">
+                    <thead>
+                        <tr>
+                            <th>Admission No.</th>
+                            <th>Learner Name</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="attendanceBody"></tbody>
+                </table>
+                <button class="btn" onclick="saveAttendance()">Save Attendance</button>
             </div>
+
+            <!-- FILE STORAGE MODULE -->
+            <div id="filestorage" class="module-content">
+                <button class="btn btn-secondary back-btn" onclick="closeModule()">← Back to Dashboard</button>
+                <h3>📁 File Storage</h3>
+                <div class="success-msg" id="fileMsg">File uploaded successfully!</div>
+                <div class="input-group">
+                    <label>Upload File (Notes, Worksheets, etc.)</label>
+                    <input type="file" id="fileUpload" multiple="" data-has-listeners="true">
+                </div>
+                <div class="input-group">
+                    <label>File Description</label>
+                    <input type="text" id="fileDesc" placeholder="e.g. Grade 5 Math - Week 3 Notes" data-has-listeners="true">
+                </div>
+                <button class="btn" onclick="uploadFile()">Upload File</button>
+                <h3 style="margin-top: 30px;">Uploaded Files</h3>
+                <div id="fileList"></div>
+            </div>
+
+            <!-- QUIZ BUILDER MODULE -->
+            <div id="quiz" class="module-content">
+                <button class="btn btn-secondary back-btn" onclick="closeModule()">← Back to Dashboard</button>
+                <h3>📝 Quiz Builder</h3>
+                <div class="success-msg" id="quizMsg">Quiz saved successfully!</div>
+                <div class="input-group">
+                    <label>Quiz Title</label>
+                    <input type="text" id="quizTitle" placeholder="e.g. Grade 4 Science - Plants" data-has-listeners="true">
+                </div>
+                <div class="input-group">
+                    <label>Question</label>
+                    <textarea id="quizQuestion" rows="3" placeholder="Enter your question" data-has-listeners="true"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Option A</label>
+                        <input type="text" id="optA" placeholder="Option A" data-has-listeners="true">
+                    </div>
+                    <div class="input-group">
+                        <label>Option B</label>
+                        <input type="text" id="optB" placeholder="Option B" data-has-listeners="true">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Option C</label>
+                        <input type="text" id="optC" placeholder="Option C" data-has-listeners="true">
+                    </div>
+                    <div class="input-group">
+                        <label>Option D</label>
+                        <input type="text" id="optD" placeholder="Option D" data-has-listeners="true">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Correct Answer</label>
+                    <select id="correctAns">
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                        <option value="D">Option D</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="saveQuiz()">Add Question to Quiz</button>
+                <div id="quizList"></div>
+            </div>
+
+            <!-- NOTES VAULT MODULE -->
+            <div id="notes" class="module-content">
+                <button class="btn btn-secondary back-btn" onclick="closeModule()">← Back to Dashboard</button>
+                <h3>📚 Notes Vault</h3>
+                <div class="success-msg" id="noteMsg">Note saved successfully!</div>
+                <div class="input-group">
+                    <label>Subject</label>
+                    <input type="text" id="noteSubject" placeholder="e.g. Mathematics" data-has-listeners="true">
+                </div>
+                <div class="input-group">
+                    <label>Topic</label>
+                    <input type="text" id="noteTopic" placeholder="e.g. Fractions" data-has-listeners="true">
+                </div>
+                <div class="input-group">
+                    <label>Note Content</label>
+                    <textarea id="noteContent" rows="8" placeholder="Write your lesson notes here..." data-has-listeners="true"></textarea>
+                </div>
+                <button class="btn" onclick="saveNote()">Save Note</button>
+                <h3 style="margin-top: 30px;">Saved Notes</h3>
+                <div id="notesList"></div>
+            </div>
+
+            <!-- PAST PAPERS MODULE -->
+            <div id="pastpapers" class="module-content">
+                <button class="btn btn-secondary back-btn" onclick="closeModule()">← Back to Dashboard</button>
+                <h3>📄 Past Papers</h3>
+                <p>Upload KCPE and CBC past papers for learners to access.</p>
+                <div class="input-group">
+                    <label>Paper Name</label>
+                    <input type="text" id="paperName" placeholder="e.g. KCPE 2023 Mathematics" data-has-listeners="true">
+                </div>
+                <div class="input-group">
+                    <label>Upload Paper</label>
+                    <input type="file" id="paperFile" data-has-listeners="true">
+                </div>
+                <button class="btn" onclick="uploadPaper()">Upload Past Paper</button>
+                <div id="papersList"></div>
+            </div>
+
+            <!-- CBC TRACKER MODULE -->
+            <div id="tracker" class="module-content">
+                <button class="btn btn-secondary back-btn" onclick="closeModule()">← Back to Dashboard</button>
+                <h3>📊 CBC Tracker</h3>
+                <p>Track learner competencies based on CBC curriculum.</p>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Learner Name</label>
+                        <input type="text" id="trackLearner" placeholder="e.g. Grace" data-has-listeners="true">
+                    </div>
+                    <div class="input-group">
+                        <label>Learning Area</label>
+                        <select id="trackArea">
+                            <option>Mathematics</option>
+                            <option>English</option>
+                            <option>Kiswahili</option>
+                            <option>Science</option>
+                            <option>Social Studies</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Competency</label>
+                    <input type="text" id="trackCompetency" placeholder="e.g. Can solve addition problems" data-has-listeners="true">
+                </div>
+                <div class="input-group">
+                    <label>Performance Level</label>
+                    <select id="trackLevel">
+                        <option>Exceeding Expectation</option>
+                        <option>Meeting Expectation</option>
+                        <option>Approaching Expectation</option>
+                        <option>Below Expectation</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="saveTracker()">Save Assessment</button>
+                <div id="trackerList"></div>
+            </div>
+
         </div>
     </div>
 
     <a href="https://wa.me/254791021595" class="whatsapp-btn" target="_blank">💬</a>
 
     <script>
-        // User database - First Name = Username, Admission No = Password
         const users = {
             'Collins': { password: '1312', role: 'admin', name: 'Sir Collins Livoi' },
             'Teacher': { password: 'T001', role: 'teacher', name: 'Teacher' },
             'Grace': { password: 'ADM001', role: 'learner', name: 'Grace' }
         };
+
+        let currentUser = null;
+        let learners = ['Grace'];
+        let files = [];
+        let quizzes = [];
+        let notes = [];
+        let papers = [];
+        let trackerData = [];
+
+        // Set today's date
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            const dateInput = document.getElementById('attendanceDate');
+            if (dateInput) dateInput.value = today;
+        });
 
         function login() {
             const username = document.getElementById('username').value.trim();
@@ -915,27 +1087,14 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
             const errorMsg = document.getElementById('errorMsg');
             
             if (users[username] && users[username].password === password) {
-                const user = users[username];
+                currentUser = users[username];
+                currentUser.username = username;
                 errorMsg.style.display = 'none';
-                
-                // Hide login, show dashboard
                 document.getElementById('loginSection').style.display = 'none';
                 document.getElementById('dashboardSection').style.display = 'block';
-                
-                // Set user info
-                document.getElementById('welcomeText').textContent = `Welcome, ${user.name}`;
+                document.getElementById('welcomeText').textContent = `Welcome, ${currentUser.name}`;
                 document.getElementById('userBadge').textContent = username;
-                
-                // Show correct modules based on role
-                if (user.role === 'admin' || user.role === 'teacher') {
-                    document.getElementById('roleText').textContent = 'Teacher/Admin Dashboard';
-                    document.getElementById('teacherModules').classList.remove('hidden');
-                    document.getElementById('learnerModules').classList.add('hidden');
-                } else {
-                    document.getElementById('roleText').textContent = 'Learner Dashboard';
-                    document.getElementById('teacherModules').classList.add('hidden');
-                    document.getElementById('learnerModules').classList.remove('hidden');
-                }
+                document.getElementById('roleText').textContent = currentUser.role === 'admin' || currentUser.role === 'teacher' ? 'Teacher/Admin Dashboard' : 'Learner Dashboard';
             } else {
                 errorMsg.style.display = 'block';
             }
@@ -946,10 +1105,141 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
             document.getElementById('dashboardSection').style.display = 'none';
             document.getElementById('username').value = '';
             document.getElementById('password').value = '';
-            document.getElementById('errorMsg').style.display = 'none';
+            closeModule();
         }
 
-        // Allow Enter key to login
+        function openModule(moduleId) {
+            document.getElementById('modulesGrid').style.display = 'none';
+            document.querySelectorAll('.module-content').forEach(m => m.classList.remove('active'));
+            document.getElementById(moduleId).classList.add('active');
+            
+            if (moduleId === 'attendance') loadAttendance();
+        }
+
+        function closeModule() {
+            document.getElementById('modulesGrid').style.display = 'grid';
+            document.querySelectorAll('.module-content').forEach(m => m.classList.remove('active'));
+        }
+
+        function loadAttendance() {
+            const tbody = document.getElementById('attendanceBody');
+            tbody.innerHTML = '';
+            learners.forEach(learner => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>ADM00${learners.indexOf(learner) + 1}</td>
+                    <td>${learner}</td>
+                    <td>
+                        <select>
+                            <option value="present">Present</option>
+                            <option value="absent">Absent</option>
+                            <option value="late">Late</option>
+                        </select>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function saveAttendance() {
+            document.getElementById('attendanceMsg').style.display = 'block';
+            setTimeout(() => document.getElementById('attendanceMsg').style.display = 'none', 3000);
+        }
+
+        function uploadFile() {
+            const fileInput = document.getElementById('fileUpload');
+            const desc = document.getElementById('fileDesc').value;
+            if (fileInput.files.length > 0 && desc) {
+                files.push({name: fileInput.files[0].name, desc: desc, date: new Date().toLocaleDateString()});
+                displayFiles();
+                document.getElementById('fileMsg').style.display = 'block';
+                setTimeout(() => document.getElementById('fileMsg').style.display = 'none', 3000);
+                fileInput.value = '';
+                document.getElementById('fileDesc').value = '';
+            }
+        }
+
+        function displayFiles() {
+            const list = document.getElementById('fileList');
+            list.innerHTML = files.map(f => `<div class="file-item"><div><strong>${f.name}</strong><br><small>${f.desc} - ${f.date}</small></div><button class="btn btn-small btn-danger" onclick="deleteFile('${f.name}')">Delete</button></div>`).join('');
+        }
+
+        function deleteFile(name) {
+            files = files.filter(f => f.name !== name);
+            displayFiles();
+        }
+
+        function saveQuiz() {
+            const quiz = {
+                title: document.getElementById('quizTitle').value,
+                question: document.getElementById('quizQuestion').value,
+                options: {
+                    A: document.getElementById('optA').value,
+                    B: document.getElementById('optB').value,
+                    C: document.getElementById('optC').value,
+                    D: document.getElementById('optD').value
+                },
+                answer: document.getElementById('correctAns').value
+            };
+            if (quiz.title && quiz.question) {
+                quizzes.push(quiz);
+                document.getElementById('quizMsg').style.display = 'block';
+                setTimeout(() => document.getElementById('quizMsg').style.display = 'none', 3000);
+                document.getElementById('quizQuestion').value = '';
+                document.getElementById('optA').value = '';
+                document.getElementById('optB').value = '';
+                document.getElementById('optC').value = '';
+                document.getElementById('optD').value = '';
+            }
+        }
+
+        function saveNote() {
+            const note = {
+                subject: document.getElementById('noteSubject').value,
+                topic: document.getElementById('noteTopic').value,
+                content: document.getElementById('noteContent').value,
+                date: new Date().toLocaleDateString()
+            };
+            if (note.subject && note.topic) {
+                notes.push(note);
+                displayNotes();
+                document.getElementById('noteMsg').style.display = 'block';
+                setTimeout(() => document.getElementById('noteMsg').style.display = 'none', 3000);
+                document.getElementById('noteSubject').value = '';
+                document.getElementById('noteTopic').value = '';
+                document.getElementById('noteContent').value = '';
+            }
+        }
+
+        function displayNotes() {
+            const list = document.getElementById('notesList');
+            list.innerHTML = notes.map(n => `<div class="file-item"><div><strong>${n.subject} - ${n.topic}</strong><br><small>${n.content.substring(0, 100)}... - ${n.date}</small></div></div>`).join('');
+        }
+
+        function uploadPaper() {
+            const name = document.getElementById('paperName').value;
+            if (name) {
+                papers.push({name: name, date: new Date().toLocaleDateString()});
+                document.getElementById('paperName').value = '';
+                document.getElementById('paperFile').value = '';
+            }
+        }
+
+        function saveTracker() {
+            const track = {
+                learner: document.getElementById('trackLearner').value,
+                area: document.getElementById('trackArea').value,
+                competency: document.getElementById('trackCompetency').value,
+                level: document.getElementById('trackLevel').value,
+                date: new Date().toLocaleDateString()
+            };
+            if (track.learner && track.competency) {
+                trackerData.push(track);
+                document.getElementById('trackLearner').value = '';
+                document.getElementById('trackCompetency').value = '';
+            }
+        }
+
         document.getElementById('password').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') login();
         });
